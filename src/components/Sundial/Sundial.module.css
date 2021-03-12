@@ -1,0 +1,192 @@
+.justForFlex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sundialWrapper {
+  height: 300px;
+  overflow-y: hidden;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  top: 0;
+  margin-top: 1rem;
+  padding: 5rem 0;
+}
+
+.sunTimes {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.sunrise p,
+.sunset p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.mainWrapper {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  position: relative;
+  top: -70px;
+  left: -10px;
+}
+
+.sunPos {
+  position: absolute;
+  top: 130px;
+  left: 160px;
+  offset-path: path("M20,20 C175,-220 370,-10 350,20");
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff874f), to(#ffdc6a));
+  background-image: linear-gradient(180deg, #ff874f, #ffdc6a);
+  z-index: 10;
+}
+
+.sundial {
+  width: 700px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+  left: -100px;
+}
+
+.justForBorder {
+  height: 611px;
+  width: 701px;
+  background-color: #fdaa3e;
+  -webkit-clip-path: ellipse(30.5% 44.5% at 50% 50%);
+          clip-path: ellipse(30.5% 44.5% at 50% 50%);
+  overflow: hidden;
+}
+
+.dial {
+  position: relative;
+  height: 600px;
+  width: 700px;
+  background-color: white;
+  -webkit-clip-path: ellipse(30% 44% at 50% 50%);
+          clip-path: ellipse(30% 44% at 50% 50%);
+  overflow: hidden;
+}
+
+.passed {
+  width: 700px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: -522px;
+  border-right: 1px solid #fdaa3e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffdeb4), to(#fff6d0));
+  background-image: linear-gradient(180deg, #ffdeb4, #fff6d0);
+}
+
+.afterWrapper {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  top: -30px;
+  left: -46px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.beforeWrapper {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  top: 120px;
+  left: 246px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 2;
+}
+
+.before,
+.after {
+  position: absolute;
+  height: 600px;
+  width: 700px;
+  background-color: #686868;
+  -webkit-clip-path: ellipse(30% 44% at 50% 50%);
+          clip-path: ellipse(30% 44% at 50% 50%);
+  overflow: hidden;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.after {
+  top: 0px;
+  left: 0px;
+}
+
+.before {
+  top: 0px;
+  right: 0px;
+}
+
+@media screen and (max-width: 532px) {
+  .sundialWrapper {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+  }
+  .mainWrapper {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    left: -45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sundialWrapper {
+    width: 700px;
+  }
+  .mainWrapper {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    left: 65px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sundialWrapper {
+    width: 700px;
+    overflow: hidden;
+  }
+  .mainWrapper {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    left: 79px;
+  }
+}
+/*# sourceMappingURL=Sundial.module.css.map */

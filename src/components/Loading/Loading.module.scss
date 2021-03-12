@@ -1,0 +1,32 @@
+.loadingWrapper {
+  display: grid;
+  place-items: center;
+  margin: 5rem auto;
+}
+
+.loadingIcon {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border-top: 3.2rem solid rgb(75, 75, 75);
+  border-bottom: 3.2rem solid rgb(255, 190, 48);
+  transform: rotate(90deg);
+  animation: load 1s infinite;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+
+.loadingText {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0.5rem auto;
+}

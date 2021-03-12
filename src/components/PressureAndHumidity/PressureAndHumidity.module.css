@@ -1,0 +1,36 @@
+.pAndHWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pItem {
+  width: 100%;
+  margin-right: 0.4rem;
+}
+
+.hItem {
+  width: 100%;
+  margin-left: 0.4rem;
+}
+
+.pItem,
+.hItem {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ebf8ff;
+}
+
+.pItem p,
+.hItem p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=PressureAndHumidity.module.css.map */

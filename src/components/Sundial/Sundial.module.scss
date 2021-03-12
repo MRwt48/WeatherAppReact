@@ -1,0 +1,183 @@
+.justForFlex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sundialWrapper {
+  height: 300px;
+  overflow-y: hidden;
+  //   transform: scale(0.5);
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  // outline: 1px solid green;
+  top: 0;
+  margin-top: 1rem;
+  padding: 5rem 0;
+}
+
+.sunTimes {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  // padding: 7rem 4.5rem;
+}
+
+.sunrise,
+.sunset {
+  & p {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+}
+
+.mainWrapper {
+  transform: scale(0.5);
+  position: relative;
+  top: -70px;
+  left: -10px;
+  // outline: 1px solid red;
+}
+
+.sunPos {
+  position: absolute;
+  top: 130px;
+  left: 160px;
+  offset-path: path("M20,20 C175,-220 370,-10 350,20");
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 135, 79),
+    rgb(255, 220, 106)
+  );
+
+  z-index: 10;
+}
+
+.sundial {
+  width: 700px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+  left: -100px;
+}
+
+.justForBorder {
+  height: 611px;
+  width: 701px;
+  background-color: rgb(253, 170, 62);
+  clip-path: ellipse(30.5% 44.5% at 50% 50%);
+  overflow: hidden;
+}
+
+.dial {
+  position: relative;
+  height: 600px;
+  width: 700px;
+  background-color: white;
+  clip-path: ellipse(30% 44% at 50% 50%);
+  overflow: hidden;
+}
+
+.passed {
+  width: 700px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: -522px;
+  border-right: 1px solid rgb(253, 170, 62);
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 222, 180),
+    rgb(255, 246, 208)
+  );
+}
+
+.afterWrapper {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  top: -30px;
+  left: -46px;
+  //   outline: 1px solid red;
+  transform: rotate(180deg);
+}
+
+.beforeWrapper {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  top: 120px;
+  left: 246px;
+  //   outline: 1px solid red;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.before,
+.after {
+  position: absolute;
+  height: 600px;
+  width: 700px;
+  background-color: rgb(104, 104, 104);
+  clip-path: ellipse(30% 44% at 50% 50%);
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+
+.after {
+  top: 0px;
+  left: 0px;
+}
+
+.before {
+  top: 0px;
+  right: 0px;
+}
+
+@media screen and (max-width: 532px) {
+  .sundialWrapper {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .mainWrapper {
+    transform: scale(0.4);
+    left: -45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sundialWrapper {
+    width: 700px;
+  }
+
+  .mainWrapper {
+    transform: scale(0.8);
+    left: 65px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sundialWrapper {
+    width: 700px;
+    overflow: hidden;
+  }
+
+  .mainWrapper {
+    transform: scale(0.8);
+    left: 79px;
+  }
+}

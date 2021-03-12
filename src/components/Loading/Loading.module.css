@@ -1,0 +1,49 @@
+.loadingWrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 5rem auto;
+}
+
+.loadingIcon {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  border-top: 3.2rem solid #4b4b4b;
+  border-bottom: 3.2rem solid #ffbe30;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: load 1s infinite;
+          animation: load 1s infinite;
+}
+
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+@keyframes load {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+.loadingText {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0.5rem auto;
+}
+/*# sourceMappingURL=Loading.module.css.map */

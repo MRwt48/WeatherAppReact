@@ -1,0 +1,17 @@
+.currentTempWrapper {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.currentTempTemp {
+  margin-right: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=CurrentTemp.module.css.map */

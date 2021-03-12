@@ -1,0 +1,115 @@
+.searchBarWrapper {
+  margin: 1rem auto;
+  position: relative;
+  max-width: 600px;
+  z-index: 10;
+}
+
+.locationIcon {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  cursor: pointer;
+}
+
+.locationIcon:is(:hover, :focus) + .searchBar {
+  -webkit-box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.searchBar {
+  outline: none;
+  border: 1px solid #0077ff;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.searchBar:is(:hover, :focus) {
+  -webkit-box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.suggestions {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.suggestionsItem {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 67px;
+}
+
+.showTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tempAndDay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tempAndDay p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.tempAndDay span {
+  display: inline-block;
+  font-size: smaller;
+}
+
+.icon {
+  display: inline-block;
+  min-width: 50px;
+}
+/*# sourceMappingURL=SearchBar.module.css.map */

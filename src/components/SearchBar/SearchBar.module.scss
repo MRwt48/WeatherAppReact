@@ -1,0 +1,81 @@
+.searchBarWrapper {
+  margin: 1rem auto;
+  position: relative;
+  max-width: 600px;
+  z-index: 10;
+}
+
+.locationIcon {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  cursor: pointer;
+
+  &:is(:hover, :focus) + .searchBar {
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.searchBar {
+  outline: none;
+  border: 1px solid rgb(0, 119, 255);
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  transition: 0.1s ease-in-out;
+
+  &:is(:hover, :focus) {
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.suggestions {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.suggestionsItem {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 67px;
+}
+
+.showTemp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tempAndDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & p {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  & span {
+    display: inline-block;
+    font-size: smaller;
+  }
+}
+
+.icon {
+  display: inline-block;
+  min-width: 50px;
+}

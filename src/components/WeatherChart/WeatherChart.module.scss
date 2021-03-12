@@ -1,0 +1,16 @@
+.weatherChartWrapper {
+  position: relative;
+  overflow-x: auto;
+  margin: 1rem auto;
+  & canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.weatherChartAreaWrapper {
+  width: 100%;
+  overflow-x: auto;
+  height: 210px;
+}
