@@ -6,7 +6,7 @@ const Sundial = ({ weatherData }: { weatherData: any }) => {
   let sunsetDate = new Date(weatherData.current.sunset * 1000);
   let sunriseHours = sunriseDate.getHours();
   let sunsetHours = sunsetDate.getHours();
-  let current = new Date().getHours();
+  let current = new Date(weatherData.current.dt * 1000).getHours();
   let left = 345 * ((current - sunriseHours) / (sunsetHours - sunriseHours));
   let offset = ((current - sunriseHours) / (sunsetHours - sunriseHours)) * 100;
 
@@ -85,7 +85,7 @@ const Sundial = ({ weatherData }: { weatherData: any }) => {
         "linear-gradient(180deg,rgb(58, 58, 58),rgb(117, 117, 117))",
       borderRight: "1px solid gray",
     };
-    if (current >= 0 && current < sunsetHours) current += 24;
+    if (current >= 0 && current < sunriseHours) current += 24;
     left =
       345 * (Math.abs(sunsetHours - current) / (sunsetHours - sunriseHours));
     offset =

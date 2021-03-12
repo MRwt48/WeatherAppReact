@@ -108,7 +108,7 @@ const SearchBar = () => {
         let newArr = await Promise.all(
           arr.map(async (city) => {
             return fetch(
-              `http://api.openweathermap.org/data/2.5/weather?id=${city.id}&appid=${process.env.REACT_APP_API_KEY}`
+              `https://api.openweathermap.org/data/2.5/weather?id=${city.id}&appid=${process.env.REACT_APP_API_KEY}`
             )
               .then((data) => data.json())
               .catch((err) => {
